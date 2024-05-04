@@ -1,0 +1,226 @@
+GOOGLE <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Home</title>
+</head>
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, sans-serif;
+}
+
+.google-main-container {
+    padding-top: 20px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.top-nav ul {
+    float: right;
+    padding: 0 30px;
+}
+
+.top-nav ul li {
+    margin: 2px 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.top-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#google-apps {
+    background-image: url("./993522.avif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+    height: 15px;
+    width: 15px;
+}
+
+#user-profile {
+    width: 32px;
+    height: 32px;
+    background-image: url("./user.png");
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo-container {
+    padding-top: 100px;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.search {
+    width: 80%;
+    border: 1px solid rgb(184, 163, 163);
+    display: flex;
+    padding: 4px 20px;
+    align-items: center;
+    margin: 2rem auto;
+    border-radius: 50px;
+}
+
+.search input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+
+.search img {
+    width: 15px;
+}
+
+.buttons {
+    width: 300px;
+    margin: 20px auto;
+}
+
+button {
+    border: 1px solid white;
+    color: #757575;
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 1px solid #b8b8b8;
+}
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+    color: #666;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 15px;
+    height: 40px;
+}
+
+.left-footer {
+    float: left;
+}
+
+.right-footer {
+    float: right;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 573px) {
+    .logo img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 346px) {
+    .buttons {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .left-footer {
+        text-align: center;
+    }
+}
+
+</style>
+<body>
+   <div class="google-main-container">
+      <div class="top-nav">
+          <ul>
+              <li><a href="#">Gmail</a></li>
+              <li><a href="#">Images</a></li>
+              <li id="google-apps"><a href="#"></a></li>
+              <li id="user-profile"></li>
+          </ul>
+      </div>
+      <div class="main">
+          <div class="logo-container">
+              <div class="logo"> <img src="google-logo.png"> </div>
+              <div class="search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="text" name="search" id=""> <img id="microphone" src="mic.png"> </input>
+              </div>
+              <div class="buttons">
+                  <button id="main-btn">Google Search</button>
+                  <button id="sec-btn">I'm Feeling Lucky</button>
+              </div>
+          </div>
+      </div>
+   </div>
+   <div class="footer">
+      <ul class="left-footer">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#"> How Search Works </a></li>
+      </ul>
+      <ul class="right-footer">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Settings</a></li>
+      </ul>
+  </div>
+</div>
+</body>
+       
+
+</html>
